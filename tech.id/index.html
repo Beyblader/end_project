@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="logo.png" class="logo"></a>
+           
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="FT.html">Future Technology</a></li>
+                <li><a href="tech_t.php">Technology Type</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.php">Login</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just Technology<br>It's <span>Future</span></h2>
+               <p>This Website will tell you about future technology, seems like, automotive technology, farm technology, etc.</p>
+               <a href="#">Learn More</a>
+
+              
+            </div>
+            <div class="imgBox">
+                <img src="blue_robot.png" class="brobot">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="red_robot.png" width="70px" onclick="imgSlider('red_robot.png'); changeCircleColor('#820000')"></li>
+           
+            <li><img src="blue_robot.png" width="70px" onclick="imgSlider('blue_robot.png'); changeCircleColor('#85CDFD')"></li>
+        </ul>
+        
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.brobot').src = anything;
+        }
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>
